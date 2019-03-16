@@ -1,0 +1,187 @@
+================company===================
+Generating new company AVXBuilders
+================company===================
+Generating new company TestCompany
+================department===================
+Generating new department null
+Generated new department node head - Management Children: 0
+================department===================
+Generating new department Management
+Found department node Management Children: 0
+Setting node father Management Children: 1 to Finance Children: 0
+Connected node Finance Children: 0 with father node Management Children: 1
+Management Children: 1 -> Finance Children: 0
+================department===================
+Generating new department Finance
+Found department node Finance Children: 0
+Setting node father Finance Children: 1 to Finance1 Children: 0
+Connected node Finance1 Children: 0 with father node Finance Children: 1
+Management Children: 2 -> Finance Children: 1 -> Finance1 Children: 0
+================department===================
+Generating new department null
+Generated new department node head - Administration Children: 0
+================department===================
+Generating new department Administration
+Found department node Administration Children: 0
+Setting node father Administration Children: 1 to Budgets Children: 0
+Connected node Budgets Children: 0 with father node Administration Children: 1
+Administration Children: 1 -> Budgets Children: 0
+================department===================
+Generating new department Budgets
+Found department node Budgets Children: 0
+Setting node father Budgets Children: 1 to Payroll Children: 0
+Connected node Payroll Children: 0 with father node Budgets Children: 1
+Administration Children: 2 -> Budgets Children: 1 -> Payroll Children: 0
+================employee===================
+Attempting to add employee Noa to department Payroll Children: 0
+================department===================
+Generating new department Payroll
+Found department node Payroll Children: 0 (Noa)
+Setting node father Payroll Children: 1 (Noa) to General Children: 0
+Connected node General Children: 0 with father node Payroll Children: 1 (Noa)
+Administration Children: 3 -> Budgets Children: 2 -> Payroll Children: 1 (Noa) -> General Children: 0
+================department===================
+Generating new department Payroll
+Found department node Payroll Children: 1 (Noa)
+Setting node father Payroll Children: 2 (Noa) to Specific Children: 0
+Connected node Specific Children: 0 with father node Payroll Children: 2 (Noa)
+Administration Children: 4 -> Budgets Children: 3 -> Payroll Children: 2 (Noa) -> Specific Children: 0
+================employee===================
+Attempting to add employee Evgeny to department Payroll Children: 2 (Noa)
+================department===================
+Generating new department Finance
+Found department node Finance Children: 1
+Setting node father Finance Children: 2 to Finance2 Children: 0
+Connected node Finance2 Children: 0 with father node Finance Children: 2
+Management Children: 3 -> Finance Children: 2 -> Finance2 Children: 0
+================department===================
+Generating new department Management
+Found department node Management Children: 3
+Setting node father Management Children: 4 to Builders Children: 0
+Connected node Builders Children: 0 with father node Management Children: 4
+Management Children: 4 -> Builders Children: 0
+================department===================
+Generating new department Builders
+Found department node Builders Children: 0
+Setting node father Builders Children: 1 to Builders2 Children: 0
+Connected node Builders2 Children: 0 with father node Builders Children: 1
+Management Children: 5 -> Builders Children: 1 -> Builders2 Children: 0
+================department===================
+Generating new department Builders
+Found department node Builders Children: 1
+Setting node father Builders Children: 2 to Builders1 Children: 0
+Connected node Builders1 Children: 0 with father node Builders Children: 2
+Management Children: 6 -> Builders Children: 2 -> Builders1 Children: 0
+================department===================
+Generating new department Builders2
+Found department node Builders2 Children: 0
+Setting node father Builders2 Children: 1 to Builders3 Children: 0
+Connected node Builders3 Children: 0 with father node Builders2 Children: 1
+Management Children: 7 -> Builders Children: 3 -> Builders2 Children: 1 -> Builders3 Children: 0
+================employee===================
+Attempting to add employee Test to department Builders3 Children: 0
+================employee===================
+Attempting to add employee John to department Builders Children: 3
+================employee===================
+Attempting to add employee Kiril to department Payroll Children: 2 (Noa, Evgeny)
+================employee===================
+Attempting to add employee Doe to department Builders Children: 3 (John)
+================employee===================
+Attempting to add employee Max to department Builders Children: 3 (John, Doe)
+================employee===================
+Attempting to add employee Max to department General Children: 0
+================employee===================
+Attempting to add employee Tailor to department General Children: 0 (Max)
+================employee===================
+Attempting to add employee Swift to department General Children: 0 (Max, Tailor)
+================employee===================
+Attempting to add employee King to department General Children: 0 (Max, Tailor, Swift)
+================employee===================
+Attempting to add employee Gorge to department General Children: 0 (Max, Tailor, Swift, King)
+================employee===================
+Attempting to add employee Chen to department Specific Children: 0
+================employee===================
+Attempting to add employee Amit to department Specific Children: 0 (Chen)
+================employee===================
+Attempting to add employee Lora to department Specific Children: 0 (Chen, Amit)
+================employee===================
+Attempting to add employee Laura to department Specific Children: 0 (Chen, Amit, Lora)
+================employee===================
+Attempting to add employee Stephen to department Builders Children: 3 (John, Doe, Max)
+================employee===================
+Attempting to add employee Evgeny to department Builders Children: 3 (John, Doe, Max, Stephen)
+================printTree===================
+Request to print tree received
+Administration Children: 4
+Budgets Children: 3
+Payroll Children: 2 (Noa, Evgeny, Kiril)
+General Children: 0 (Max, Tailor, Swift, King, Gorge)
+Specific Children: 0 (Chen, Amit, Lora, Laura)
+================printTree===================
+Request to print tree received
+Management Children: 7
+Finance Children: 2
+Finance1 Children: 0
+Finance2 Children: 0
+Builders Children: 3 (John, Doe, Max, Stephen, Evgeny)
+Builders2 Children: 1
+Builders3 Children: 0 (Test)
+Builders1 Children: 0
+================vacation===================
+Employee John is taking a vacation
+Employee Doe is taking a vacation
+================printTree===================
+Request to print tree received
+Management Children: 7
+Finance Children: 2
+Finance1 Children: 0
+Finance2 Children: 0
+Builders Children: 3 (Max, Stephen, Evgeny, John, Doe)
+Builders2 Children: 1
+Builders3 Children: 0 (Test)
+Builders1 Children: 0
+================merge===================
+Successfully merged Finance2 & Finance1 Children: 0 and Finance1 Children: 0
+================merge===================
+Successfully merged Builders1 & Builders2 Children: 1 and Builders2 Children: 1
+================printTree===================
+Request to print tree received
+Management Children: 5
+Finance Children: 1
+Finance2 & Finance1 Children: 0
+Builders Children: 2 (Max, Stephen, Evgeny, John, Doe)
+Builders1 & Builders2 Children: 1
+Builders3 Children: 0 (Test)
+================printTree===================
+Request to print tree received
+Administration Children: 4
+Budgets Children: 3
+Payroll Children: 2 (Noa, Evgeny, Kiril)
+General Children: 0 (Max, Tailor, Swift, King, Gorge)
+Specific Children: 0 (Chen, Amit, Lora, Laura)
+================merge===================
+Could not merge departments (Both not under the same department).
+================printTree===================
+Request to print tree received
+Administration Children: 4
+Budgets Children: 3
+Payroll Children: 2 (Noa, Evgeny, Kiril)
+General Children: 0 (Max, Tailor, Swift, King, Gorge)
+Specific Children: 0 (Chen, Amit, Lora, Laura)
+================merge===================
+Could not merge departments (Both not under the same department).
+================printTree===================
+Request to print tree received
+Administration Children: 4
+Budgets Children: 3
+Payroll Children: 2 (Noa, Evgeny, Kiril)
+General Children: 0 (Max, Tailor, Swift, King, Gorge)
+Specific Children: 0 (Chen, Amit, Lora, Laura)
+================merge===================
+Successfully merged General & Specific Children: 0 (Max, Tailor, Swift, King, Gorge, Chen, Amit, Lora, Laura) and Specific Children: 0 (Chen, Amit, Lora, Laura)
+================printTree===================
+Request to print tree received
+Administration Children: 3
+Budgets Children: 2
+Payroll Children: 1 (Noa, Evgeny, Kiril)
+General & Specific Children: 0 (Max, Tailor, Swift, King, Gorge, Chen, Amit, Lora, Laura)

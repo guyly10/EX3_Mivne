@@ -1,0 +1,48 @@
+company AVXBuilders
+company TestCompany
+department AVXBuilders null Management
+department AVXBuilders Management Finance
+department AVXBuilders Finance Finance1
+department TestCompany null Administration
+department TestCompany Administration Budgets
+department TestCompany Budgets Payroll
+employee TestCompany Payroll Noa
+department TestCompany Payroll General
+department TestCompany Payroll Specific
+employee TestCompany Payroll Evgeny
+department AVXBuilders Finance Finance2
+department AVXBuilders Management Builders
+department AVXBuilders Builders Builders2
+department AVXBuilders Builders Builders1
+department AVXBuilders Builders2 Builders3
+employee AVXBuilders Builders3 Test
+employee AVXBuilders Builders John
+employee TestCompany Payroll Kiril
+employee AVXBuilders Builders Doe
+employee AVXBuilders Builders Max
+employee TestCompany General Max
+employee TestCompany General Tailor
+employee TestCompany General Swift
+employee TestCompany General King
+employee TestCompany General Gorge
+employee TestCompany Specific Chen
+employee TestCompany Specific Amit
+employee TestCompany Specific Lora
+employee TestCompany Specific Laura
+employee AVXBuilders Builders Stephen
+employee AVXBuilders Builders Evgeny
+printTree TestCompany
+printTree AVXBuilders
+vacation AVXBuilders Builders 2
+printTree AVXBuilders
+merge AVXBuilders Finance2 Finance1
+merge AVXBuilders Builders1 Builders2
+printTree AVXBuilders
+printTree TestCompany
+merge TestCompany Payroll Specific
+printTree TestCompany
+merge TestCompany Payroll General
+printTree TestCompany
+merge TestCompany General Specific
+printTree TestCompany
+
